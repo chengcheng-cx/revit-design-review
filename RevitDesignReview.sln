@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitDesignReview.Core", "src\RevitDesignReview.Core\RevitDesignReview.Core.csproj", "{19729198-C863-4988-A25C-A104AF5022A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitDesignReview.Data", "src\RevitDesignReview.Data\RevitDesignReview.Data.csproj", "{E9D36041-DB2A-4BBD-8EAA-18BB29F48F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitDesignReview.Revit2026", "src\RevitDesignReview.Revit2026\RevitDesignReview.Revit2026.csproj", "{036DF984-09BF-40CF-84C0-155192545361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitDesignReview.Core.Tests", "tests\RevitDesignReview.Core.Tests\RevitDesignReview.Core.Tests.csproj", "{D772AF7D-0B47-42EF-857E-7378B1B564F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitDesignReview.Data.Tests", "tests\RevitDesignReview.Data.Tests\RevitDesignReview.Data.Tests.csproj", "{B27D20B4-EB88-49B0-9C93-7D9654F5A2FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19729198-C863-4988-A25C-A104AF5022A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19729198-C863-4988-A25C-A104AF5022A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19729198-C863-4988-A25C-A104AF5022A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19729198-C863-4988-A25C-A104AF5022A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D36041-DB2A-4BBD-8EAA-18BB29F48F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D36041-DB2A-4BBD-8EAA-18BB29F48F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D36041-DB2A-4BBD-8EAA-18BB29F48F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D36041-DB2A-4BBD-8EAA-18BB29F48F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036DF984-09BF-40CF-84C0-155192545361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036DF984-09BF-40CF-84C0-155192545361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036DF984-09BF-40CF-84C0-155192545361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036DF984-09BF-40CF-84C0-155192545361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D772AF7D-0B47-42EF-857E-7378B1B564F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D772AF7D-0B47-42EF-857E-7378B1B564F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D772AF7D-0B47-42EF-857E-7378B1B564F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D772AF7D-0B47-42EF-857E-7378B1B564F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27D20B4-EB88-49B0-9C93-7D9654F5A2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27D20B4-EB88-49B0-9C93-7D9654F5A2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27D20B4-EB88-49B0-9C93-7D9654F5A2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27D20B4-EB88-49B0-9C93-7D9654F5A2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>RevitDesignReview.Revit2026</AssemblyName>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <RevitInstallDir Condition="'$(RevitInstallDir)' == ''">$(REVIT_2026_INSTALL_DIR)</RevitInstallDir>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3277</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="ValidateRevitInstallDir" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="'$(RevitInstallDir)' == ''"
+           Text="Set REVIT_2026_INSTALL_DIR or pass /p:RevitInstallDir=... to the Revit 2026 installation directory." />
+  </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RevitDesignReview.Core\RevitDesignReview.Core.csproj" />
+    <ProjectReference Include="..\RevitDesignReview.Data\RevitDesignReview.Data.csproj" />
+    <Reference Include="RevitAPI">
+      <HintPath>$(RevitInstallDir)\RevitAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>$(RevitInstallDir)\RevitAPIUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

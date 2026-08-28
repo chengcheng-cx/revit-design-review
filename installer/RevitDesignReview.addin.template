@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Revit Design Review</Name>
+    <Assembly>{{ASSEMBLY_PATH}}</Assembly>
+    <AddInId>94678F2E-47C6-4D17-8E02-97432CC2E164</AddInId>
+    <FullClassName>RevitDesignReview.Revit2026.App</FullClassName>
+    <VendorId>RDR</VendorId>
+    <VendorDescription>Revit Design Review</VendorDescription>
+  </AddIn>
+</RevitAddIns>

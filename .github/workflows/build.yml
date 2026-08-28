@@ -1,0 +1,24 @@
+name: Build and test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+          cache: true
+          cache-dependency-path: "**/*.csproj"
+      - name: Restore core tests
+        run: dotnet restore tests/RevitDesignReview.Core.Tests/RevitDesignReview.Core.Tests.csproj
+      - name: Restore data tests
+        run: dotnet restore tests/RevitDesignReview.Data.Tests/RevitDesignReview.Data.Tests.csproj
+      - name: Test core
+        run: dotnet test tests/RevitDesignReview.Core.Tests/RevitDesignReview.Core.Tests.csproj --configuration Release --no-restore
+      - name: Test data
+        run: dotnet test tests/RevitDesignReview.Data.Tests/RevitDesignReview.Data.Tests.csproj --configuration Release --no-restore
